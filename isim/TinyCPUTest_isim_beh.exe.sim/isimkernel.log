@@ -1,0 +1,29 @@
+Command line:
+   TinyCPUTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50308
+
+Mon Nov 23 09:51:57 2015
+
+
+ Elaboration Time: 0.4375 sec
+
+ Current Memory Usage: 1495.56 Meg
+
+ Total Signals          : 97
+ Total Nets             : 175
+ Total Signal Drivers   : 33
+ Total Blocks           : 19
+ Total Primitive Blocks : 16
+ Total Processes        : 50
+ Total Traceable Variables  : 41
+ Total Scalar Nets and Variables : 380
+Total Line Count : 214
+
+ Total Simulation Time: 0.453125 sec
+
+ Current Memory Usage: 1495.56 Meg
+
+Mon Nov 23 09:52:06 2015
+

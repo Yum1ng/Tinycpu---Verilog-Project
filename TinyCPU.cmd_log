@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/kedi/Desktop/TinyCPU/TinyCPU/TinyCPU.xst" -ofn "C:/Users/kedi/Desktop/TinyCPU/TinyCPU/TinyCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k70t-fbg676-2 TinyCPU.ngc TinyCPU.ngd  
+map -intstyle ise -p xc7k70t-fbg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TinyCPU_map.ncd TinyCPU.ngd TinyCPU.pcf 
+xst -intstyle ise -ifn "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPU.xst" -ofn "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPU.xst" -ofn "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPU.xst" -ofn "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPU.syr" 

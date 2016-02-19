@@ -1,0 +1,28 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'TinyCPU'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7k70t-fbg676-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o TinyCPU_map.ncd TinyCPU.ngd TinyCPU.pcf 
+Target Device  : xc7k70t
+Target Package : fbg676
+Target Speed   : -2
+Mapper Version : kintex7 -- $Revision: 1.55 $
+Mapped Date    : Sat Feb 28 16:09:39 2015
+
+WARNING:LIT:701 - PAD symbol "Clk" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "Clk" is not constrained (LOC) to a specific
+   location.
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 32 secs 
+Total CPU  time at the beginning of Placer: 22 secs 
+
+Phase 1.1  Initial Placement Analysis

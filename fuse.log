@@ -1,0 +1,41 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPUTest_isim_beh.exe -prj C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPUTest_beh.prj work.TinyCPUTest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/Registers.v" into library work
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/Mux8x1.v" into library work
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/Mux2x1.v" into library work
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/InstructionDecoder.v" into library work
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/BusSplit.v" into library work
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPU.v" into library work
+Analyzing Verilog file "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPUTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPUTest.v" Line 37: Port RegA is not connected to this instance
+Completed static elaboration
+Compiling module BusSplit
+Compiling module InstructionDecoder
+Compiling module Mux2x1
+Compiling module Registers
+Compiling module Adder
+Compiling module ShiftLeft
+Compiling module ShiftRight
+Compiling module And
+Compiling module Or
+Compiling module Xor
+Compiling module Nand
+Compiling module Compare
+Compiling module ALU
+Compiling module Mux8x1
+Compiling module TinyCPU
+Compiling module TinyCPUTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\TinyCPUTest_isim_beh.exe.sim\libPortability.dll".
+Compiled 17 Verilog Units
+Built simulation executable C:/Users/Muhsin/Desktop/140L/TinyCPU/TinyCPU/TinyCPUTest_isim_beh.exe
+Fuse Memory Usage: 27308 KB
+Fuse CPU Usage: 531 ms

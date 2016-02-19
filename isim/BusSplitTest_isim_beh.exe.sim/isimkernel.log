@@ -1,0 +1,28 @@
+Command line:
+   BusSplitTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1302
+
+Sat Feb 28 14:49:50 2015
+
+
+ Elaboration Time: 0.1872 sec
+
+ Current Memory Usage: 1322.55 Meg
+
+ Total Signals          : 18
+ Total Nets             : 37
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 129
+
+ Total Simulation Time: 0.280802 sec
+
+ Current Memory Usage: 1322.55 Meg
+
+Sat Feb 28 14:50:06 2015
+

@@ -1,0 +1,537 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: TinyCPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TinyCPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TinyCPU"
+Output Format                      : NGC
+Target Device                      : xc7k70t-2-fbg676
+
+---- Source Options
+Top Module Name                    : TinyCPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\Registers.v" into library work
+Parsing module <Registers>.
+Analyzing Verilog file "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\Mux8x1.v" into library work
+Parsing module <Mux8x1>.
+Analyzing Verilog file "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\Mux2x1.v" into library work
+Parsing module <Mux2x1>.
+Analyzing Verilog file "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\InstructionDecoder.v" into library work
+Parsing module <InstructionDecoder>.
+Analyzing Verilog file "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\BusSplit.v" into library work
+Parsing module <BusSplit>.
+Analyzing Verilog file "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v" into library work
+Parsing module <ALU>.
+Parsing module <Adder>.
+Parsing module <ShiftLeft>.
+Parsing module <ShiftRight>.
+Parsing module <And>.
+Parsing module <Or>.
+Parsing module <Xor>.
+Parsing module <Nand>.
+Parsing module <Compare>.
+Analyzing Verilog file "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\TinyCPU.v" into library work
+Parsing module <TinyCPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TinyCPU>.
+
+Elaborating module <BusSplit>.
+
+Elaborating module <InstructionDecoder>.
+
+Elaborating module <Mux2x1>.
+
+Elaborating module <Registers>.
+
+Elaborating module <ALU>.
+
+Elaborating module <Adder>.
+
+Elaborating module <ShiftLeft>.
+
+Elaborating module <ShiftRight>.
+
+Elaborating module <And>.
+
+Elaborating module <Or>.
+
+Elaborating module <Xor>.
+
+Elaborating module <Nand>.
+
+Elaborating module <Compare>.
+
+Elaborating module <Mux8x1>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TinyCPU>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\TinyCPU.v".
+    Summary:
+	no macro.
+Unit <TinyCPU> synthesized.
+
+Synthesizing Unit <BusSplit>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\BusSplit.v".
+    Summary:
+	no macro.
+Unit <BusSplit> synthesized.
+
+Synthesizing Unit <InstructionDecoder>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\InstructionDecoder.v".
+    Summary:
+	inferred   9 Multiplexer(s).
+Unit <InstructionDecoder> synthesized.
+
+Synthesizing Unit <Mux2x1>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\Mux2x1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux2x1> synthesized.
+
+Synthesizing Unit <Registers>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\Registers.v".
+    Found 8-bit register for signal <Hout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Registers> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Adder>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+    Found 8-bit adder for signal <Out0Adder> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+Synthesizing Unit <ShiftLeft>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+WARNING:Xst:647 - Input <ASL<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ShiftLeft> synthesized.
+
+Synthesizing Unit <ShiftRight>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+WARNING:Xst:647 - Input <ASR<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ShiftRight> synthesized.
+
+Synthesizing Unit <And>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+    Summary:
+	no macro.
+Unit <And> synthesized.
+
+Synthesizing Unit <Or>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+    Summary:
+	no macro.
+Unit <Or> synthesized.
+
+Synthesizing Unit <Xor>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+    Summary:
+Unit <Xor> synthesized.
+
+Synthesizing Unit <Nand>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+    Summary:
+	no macro.
+Unit <Nand> synthesized.
+
+Synthesizing Unit <Compare>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\ALU.v".
+    Found 8-bit comparator lessequal for signal <n0000> created at line 98
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Compare> synthesized.
+
+Synthesizing Unit <Mux8x1>.
+    Related source file is "C:\Users\Muhsin\Desktop\140L\TinyCPU\TinyCPU\Mux8x1.v".
+    Found 8-bit 8-to-1 multiplexer for signal <OutMux> created at line 38.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux8x1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 3
+ 8-bit register                                        : 3
+# Comparators                                          : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 11
+ 1-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Comparators                                          : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TinyCPU> ...
+
+Optimizing unit <Registers> ...
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TinyCPU, actual ratio is 0.
+FlipFlop F4/Hout_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop F4/Hout_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop F4/Hout_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop F4/Hout_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop F4/Hout_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop F4/Hout_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop F4/Hout_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop F4/Hout_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TinyCPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 104
+#      GND                         : 1
+#      LUT2                        : 15
+#      LUT3                        : 3
+#      LUT4                        : 13
+#      LUT5                        : 16
+#      LUT6                        : 40
+#      MUXCY                       : 7
+#      MUXF7                       : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 32
+#      FDRE                        : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 12
+#      OBUF                        : 24
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k70tfbg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              24  out of  82000     0%  
+ Number of Slice LUTs:                   87  out of  41000     0%  
+    Number used as Logic:                87  out of  41000     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     92
+   Number with an unused Flip Flop:      68  out of     92    73%  
+   Number with an unused LUT:             5  out of     92     5%  
+   Number of fully used LUT-FF pairs:    19  out of     92    20%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    300    12%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.204ns (Maximum Frequency: 453.762MHz)
+   Minimum input arrival time before clock: 2.293ns
+   Maximum output required time after clock: 0.686ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 2.204ns (frequency: 453.762MHz)
+  Total number of paths / destination ports: 397 / 16
+-------------------------------------------------------------------------
+Delay:               2.204ns (Levels of Logic = 4)
+  Source:            F5/Hout_4 (FF)
+  Destination:       F8/Hout_7 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: F5/Hout_4 to F8/Hout_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.236   0.561  F5/Hout_4 (F5/Hout_4)
+     LUT4:I0->O            1   0.043   0.495  F6/Out7<0>1_SW0 (N2)
+     LUT5:I2->O            8   0.043   0.389  F6/Out7<0>1 (F6/Out7<0>2)
+     LUT5:I4->O            1   0.043   0.350  F7/Mmux_OutMux_2_f7_6_SW1 (N38)
+     LUT5:I4->O            1   0.043   0.000  F7/Mmux_OutMux_2_f7_6 (Mux8x1toRegOut<7>)
+     FDRE:D                   -0.000          F8/Hout_7
+    ----------------------------------------
+    Total                      2.204ns (0.408ns logic, 1.796ns route)
+                                       (18.5% logic, 81.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 463 / 96
+-------------------------------------------------------------------------
+Offset:              2.293ns (Levels of Logic = 5)
+  Source:            In<11> (PAD)
+  Destination:       F8/Hout_5 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: In<11> to F8/Hout_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            29   0.000   0.534  In_11_IBUF (In_11_IBUF)
+     LUT2:I0->O           25   0.043   0.742  F2/Mmux_S111 (S1wire)
+     LUT6:I0->O            1   0.043   0.495  F6/Out7<0>21_SW8 (N15)
+     LUT5:I2->O            1   0.043   0.350  F7/Mmux_OutMux_2_f7_4_SW1 (N46)
+     LUT5:I4->O            1   0.043   0.000  F7/Mmux_OutMux_2_f7_4 (Mux8x1toRegOut<5>)
+     FDRE:D                   -0.000          F8/Hout_5
+    ----------------------------------------
+    Total                      2.293ns (0.172ns logic, 2.121ns route)
+                                       (7.5% logic, 92.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              0.686ns (Levels of Logic = 1)
+  Source:            F5/Hout_7 (FF)
+  Destination:       RegB<7> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: F5/Hout_7 to RegB<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            21   0.236   0.450  F5/Hout_7 (F5/Hout_7)
+     OBUF:I->O                 0.000          RegB_7_OBUF (RegB<7>)
+    ----------------------------------------
+    Total                      0.686ns (0.236ns logic, 0.450ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    2.204|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.74 secs
+ 
+--> 
+
+Total memory usage is 354932 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
